@@ -1,0 +1,33 @@
+{
+  "name": "tasksphere-api",
+  "version": "1.0.0",
+  "description": "TaskSphere REST API backend for project tracking",
+  "homepage": "https://github.com/g10albert/team-project-CSE341#readme",
+  "bugs": {
+    "url": "https://github.com/g10albert/team-project-CSE341/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g10albert/team-project-CSE341.git"
+  },
+  "license": "ISC",
+  "author": "Albert Garcia",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "swagger-gen": "node swagger.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "mongodb": "^6.6.2",
+    "mongoose": "^8.4.0",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "swagger-autogen": "^2.23.7"
+  }
+}
