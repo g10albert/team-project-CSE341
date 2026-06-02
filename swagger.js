@@ -6,10 +6,9 @@ const doc = {
     description:
       "Interactive API sandbox client tracking projects and tasks parameters.",
   },
-  host: "localhost:8080", // Keep your live Render domain
+  host: "team-project-cse341.onrender.com",
   basePath: "",
   schemes: ["https"],
-  // Add definitions here so Swagger builds the JSON input forms!
   definitions: {
     ProjectInput: {
       projectName: "",
@@ -18,8 +17,7 @@ const doc = {
     TaskInput: {
       projectId: "", // Example MongoDB ObjectId placeholder
       taskName: "",
-      description:
-        "",
+      description: "",
       dueDate: "",
     },
   },

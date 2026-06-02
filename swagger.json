@@ -7,9 +7,7 @@
   },
   "host": "localhost:8080",
   "basePath": "",
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["http"],
   "paths": {
     "/api-docs/": {
       "get": {
@@ -23,9 +21,7 @@
     },
     "/projects/": {
       "get": {
-        "tags": [
-          "Project"
-        ],
+        "tags": ["Project"],
         "description": "",
         "responses": {
           "200": {
@@ -37,9 +33,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Project"
-        ],
+        "tags": ["Project"],
         "description": "Create a new project workspace record.",
         "parameters": [
           {
@@ -67,9 +61,7 @@
     },
     "/projects/{id}": {
       "get": {
-        "tags": [
-          "Project"
-        ],
+        "tags": ["Project"],
         "description": "",
         "parameters": [
           {
@@ -92,9 +84,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Project"
-        ],
+        "tags": ["Project"],
         "description": "",
         "parameters": [
           {
@@ -126,9 +116,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Project"
-        ],
+        "tags": ["Project"],
         "description": "",
         "parameters": [
           {
@@ -153,9 +141,7 @@
     },
     "/tasks/": {
       "get": {
-        "tags": [
-          "Task"
-        ],
+        "tags": ["Task"],
         "description": "",
         "responses": {
           "200": {
@@ -167,9 +153,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Task"
-        ],
+        "tags": ["Task"],
         "description": "Construct a brand-new task document linked to a project.",
         "parameters": [
           {
@@ -197,9 +181,7 @@
     },
     "/tasks/{id}": {
       "get": {
-        "tags": [
-          "Task"
-        ],
+        "tags": ["Task"],
         "description": "",
         "parameters": [
           {
@@ -222,9 +204,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Task"
-        ],
+        "tags": ["Task"],
         "description": "",
         "parameters": [
           {
@@ -256,9 +236,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Task"
-        ],
+        "tags": ["Task"],
         "description": "",
         "parameters": [
           {
