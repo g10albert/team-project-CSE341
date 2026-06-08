@@ -11,14 +11,19 @@ const doc = {
   schemes: ["https"],
   definitions: {
     ProjectInput: {
-      projectName: "",
-      description: "",
+      projectName: "New Alpha Project",
+      description: "Building the main application backend architecture.",
     },
     TaskInput: {
-      projectId: "", // Example MongoDB ObjectId placeholder
-      taskName: "",
-      description: "",
-      dueDate: "",
+      projectId: "60c72b2f9b1d8b2bad765432",
+      taskName: "Database Schema Set Up",
+      description:
+        "Initialize Mongoose modeling profiles and wire up cluster rules.",
+      dueDate: "2026-06-15",
+    },
+    CommentInput: {
+      taskId: "60c72b2f9b1d8b2bad765432",
+      text: "This dashboard layout requirement handles asset loads beautifully.",
     },
   },
 };
