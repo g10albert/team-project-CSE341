@@ -25,6 +25,10 @@ const doc = {
       taskId: "60c72b2f9b1d8b2bad765432",
       text: "This dashboard layout requirement handles asset loads beautifully.",
     },
+    TagInput: {
+      tagName: "Urgent Priority",
+      colorHex: "#e74c3c",
+    },
   },
 };
 

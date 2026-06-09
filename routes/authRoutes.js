@@ -6,7 +6,7 @@ router.get('/google', passport.authenticate('google', { scope: ['profile', 'emai
 router.get('/google/callback', 
   passport.authenticate('google', { failureRedirect: '/api-docs' }),
   (req, res) => {
-    res.redirect('/api-docs'); // Redirect back to active docs sandbox after clean logging process completes
+    res.redirect('/api-docs'); 
   }
 );
 

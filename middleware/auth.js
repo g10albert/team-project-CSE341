@@ -1,6 +1,5 @@
 module.exports = {
   ensureAuth: function (req, res, next) {
-    // Automatically mock user session if running Jest automated unit tests
     if (process.env.NODE_ENV === 'test') {
       req.user = { _id: '60c72b2f9b1d8b2bad765432', displayName: 'Test User' };
       return next();
