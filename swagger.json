@@ -561,24 +561,59 @@
     },
     "/tags/": {
       "get": {
+        "tags": [
+          "Tag"
+        ],
         "description": "",
         "responses": {
+          "200": {
+            "description": "OK"
+          },
           "401": {
             "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
       "post": {
+        "tags": [
+          "Tag"
+        ],
         "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Tag configuration parameters.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TagInput"
+            }
+          }
+        ],
         "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
           "401": {
             "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
     },
     "/tags/{id}": {
       "get": {
+        "tags": [
+          "Tag"
+        ],
         "description": "",
         "parameters": [
           {
@@ -589,12 +624,24 @@
           }
         ],
         "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
           "401": {
             "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
           }
         }
       },
       "put": {
+        "tags": [
+          "Tag"
+        ],
         "description": "",
         "parameters": [
           {
@@ -602,15 +649,36 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Updated tag fields.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TagInput"
+            }
           }
         ],
         "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
           "401": {
             "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
           }
         }
       },
       "delete": {
+        "tags": [
+          "Tag"
+        ],
         "description": "",
         "parameters": [
           {
@@ -621,8 +689,17 @@
           }
         ],
         "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
           "401": {
             "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
           }
         }
       }
